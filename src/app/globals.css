@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .bg-animation:hover:after {
+    content: "";
+    --angle: 0deg;
+    @apply rounded-xl absolute inset-0 z-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false
+}
+
+@keyframes rotate-animation {
+  to {
+    --angle: 360deg
+  }
+}
+
+@supports (background: paint(houdini)) {
+  .bg-animation:hover:after {
+      animation: rotate-animation 5s linear infinite;
+      background: linear-gradient(var(--angle),#52525b,#52525b,#407cff,#da8bff,#fb7185);
+  }
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
