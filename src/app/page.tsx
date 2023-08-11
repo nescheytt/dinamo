@@ -1,3 +1,6 @@
+'use client'
+
+import { motion as m } from 'framer-motion'
 import Gradient from '@/components/Gradient'
 import Header from '@/components/Header'
 import Banner from '@/components/Banner'
@@ -6,7 +9,7 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-between py-12 px-5 md:px-24 relative bg-zinc-900">
+    <m.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .75,ease: "easeOut" }} className="min-h-screen flex flex-col items-center justify-between py-12 px-5 md:px-24 relative bg-zinc-900">
       <Gradient />
       <Header />
       <Banner />
@@ -42,6 +45,6 @@ export default function Home() {
       </section>
 
       <Footer />
-    </main>
+    </m.main>
   )
 }
