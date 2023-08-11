@@ -19,7 +19,7 @@ export default function About() {
 
       <m.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: 1.50, duration: 1.50 } }} className="max-w-6xl flex flex-col md:flex-row gap-5 md:gap-10">
         <div className="w-full relative transition duration-1000 ring-2 ring-zinc-600 ring-inset rounded-xl p-[1px] bg-animation">
-          <div className="h-full rounded-xl z-10 relative bg-white dark:bg-zinc-900 hover:dark:bg-zinc-800 p-4 animation ease-in-out duration-500">
+          <div className="h-full rounded-xl z-10 relative bg-white dark:bg-zinc-900 hover:dark:bg-zinc-800 p-6 animation ease-in-out duration-500">
             <h3 className="text-lg font-bold mb-2">Optimization</h3>
             <p className="text-md font-light text-zinc-400">
               Navigate your digital products at light speed. Scroll in peace.
@@ -28,7 +28,7 @@ export default function About() {
         </div>
 
         <div className="w-full relative transition duration-1000 ring-2 ring-zinc-600 ring-inset rounded-xl p-[1px] bg-animation">
-          <div className="h-full rounded-xl z-10 relative bg-white dark:bg-zinc-900 hover:dark:bg-zinc-800 p-4 animation ease-in-out duration-500">
+          <div className="h-full rounded-xl z-10 relative bg-white dark:bg-zinc-900 hover:dark:bg-zinc-800 p-6 animation ease-in-out duration-500">
             <h3 className="text-lg font-bold mb-2">Dynamic Design</h3>
             <p className="text-md font-light text-zinc-400">
               Modern designs for your product.
@@ -37,7 +37,7 @@ export default function About() {
         </div>
 
         <div className="w-full relative transition duration-1000 ring-2 ring-zinc-600 ring-inset rounded-xl p-[1px] bg-animation">
-          <div className="h-full rounded-xl z-10 relative bg-white dark:bg-zinc-900 hover:dark:bg-zinc-800 p-4 animation ease-in-out duration-500">
+          <div className="h-full rounded-xl z-10 relative bg-white dark:bg-zinc-900 hover:dark:bg-zinc-800 p-6 animation ease-in-out duration-500">
             <h3 className="text-lg font-bold mb-2">Consultancy</h3>
             <p className="text-md font-light text-zinc-400">
               We answer all your questions in record time.
