@@ -23,6 +23,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "framer-motion": "10.15.1"
+    "framer-motion": "10.15.1",
+    "sharp": "0.32.4"
   }
 }
