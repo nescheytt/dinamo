@@ -24,7 +24,7 @@
 
 @supports (background: paint(houdini)) {
   .bg-animation:hover:after {
-      animation: rotate-animation 5s linear infinite;
+      animation: rotate-animation 7s linear infinite;
       background: linear-gradient(var(--angle),#52525b,#52525b,#407cff,#da8bff,#fb7185);
   }
 }
