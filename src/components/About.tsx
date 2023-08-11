@@ -40,7 +40,7 @@ export default function About() {
           <div className="h-full rounded-xl z-10 relative bg-white dark:bg-zinc-900 hover:dark:bg-zinc-800 p-6 animation ease-in-out duration-500">
             <h3 className="text-lg font-bold mb-2">Consultancy</h3>
             <p className="text-md font-light text-zinc-400">
-              We answer all your questions in record time.
+              We answer all your questions record time.
             </p>
           </div>
         </div>
