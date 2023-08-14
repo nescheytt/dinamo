@@ -3,6 +3,7 @@ import Header from '@/components/Header'
 import Banner from '@/components/Banner'
 import About from '@/components/About'
 import Footer from '@/components/Footer'
+import Contact from '@/components/Contact'
 
 export default function Home() {
   return (
@@ -28,19 +29,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="min-h-screen flex flex-col items-center justify-center gap-20">
-        <div className="max-w-lg">
-          <h3 className="w-full text-3xl font-extrabold text-gray-300 text-center mb-3">
-            Start with XHunter, today.
-          </h3>
-
-          <div className="flex flex-col gap-2">
-            <label>Email</label>
-            <input type="email" placeholder="email@example.com" className="border rounded-xl border-slate-600 h-[36px] bg-gray-950 px-4" />
-          </div>
-        </div>
-      </section>
-
+      <Contact />
       <Footer />
     </main>
   )
