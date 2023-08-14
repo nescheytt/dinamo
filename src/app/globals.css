@@ -11,7 +11,7 @@
 
   .animate-shooting-star {
     animation: shooting-star 7s linear infinite;
-    @apply h-[1px] w-full bg-gradient-to-r from-transparent from-40% via-zinc-700 via-70% to-transparent to-0%;
+    @apply h-[1px] w-[920px] absolute bg-gradient-to-r from-transparent from-0% to-zinc-700 to-100%
   }
 } 
 
@@ -29,10 +29,16 @@
 
 @keyframes shooting-star {
   0% {
-      transform: translateX(-100%);
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  40% {
+    opacity: 1;
+    transform: translateX(0%);
   }
   100% {
-      transform: translateX(100%);
+    opacity: 0;
+    transform: translateX(70%);
   }
 }
 
@@ -44,7 +50,7 @@
 
   .animate-shooting-star {
     animation: shooting-star 7s linear infinite;
-    background-image: linear-gradient(to right, transparent 40%, #3f3f46 70%, transparent 0%);
+    background: linear-gradient(to right, transparent 0%, #3f3f46 100%);
   }
 }
 
