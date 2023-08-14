@@ -4,6 +4,7 @@ import Banner from '@/components/Banner'
 import About from '@/components/About'
 import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
+import AnimateStar from '@/components/AnimateStar'
 
 export default function Home() {
   return (
@@ -12,8 +13,9 @@ export default function Home() {
       <Header />
       <Banner />
       <About />
+      <AnimateStar />
 
-      <section className="w-full min-h-screen flex items-center justify-center border-b border-gray-700 gap-20">
+      <section className="w-full min-h-screen flex items-center justify-center gap-20">
         <div className="max-w-lg">
           <h3 className="w-full text-3xl font-extrabold text-gray-300 text-center mb-3">
             Never miss a notification again
@@ -29,6 +31,7 @@ export default function Home() {
         </div>
       </section>
 
+      <AnimateStar />
       <Contact />
       <Footer />
     </main>
