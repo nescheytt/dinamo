@@ -19,10 +19,10 @@ const item = {
 
 export default function Banner() {
   return (
-    <section className="min-h-screen flex items-center">
+    <section className="max-w-2xl min-h-screen flex items-center">
       <m.div variants={container} initial="hidden" animate="show">
-        <m.h2 variants={item} className="text-5xl font-extrabold text-center mb-3">Something On Your <strong>Mind?</strong></m.h2>
-        <m.p variants={item} className="text-xl text-center">At <span className="font-bold">XHunter</span> we bring your ideas to life, <span className="font-bold">now.</span></m.p>
+        <m.h2 variants={item} className="text-7xl font-bold text-center mb-3">Something On Your Mind?</m.h2>
+        <m.p variants={item} className="text-xl text-center text-zinc-400">At XHunter we bring your ideas to life, now.</m.p>
       </m.div>
     </section>
   )
