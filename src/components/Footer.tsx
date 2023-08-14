@@ -1,6 +1,7 @@
 'use client'
 
 import { motion as m } from 'framer-motion'
+import SwitcherTheme from './SwitcherTheme'
 
 const container = {
   hidden: { opacity: 0 },
@@ -19,16 +20,17 @@ const item = {
 
 export default function Footer() {
   return (
-    <m.footer variants={container} initial="hidden" animate="show" className="w-full flex flex-col justify-between">
-      <m.ol variants={item} className="flex justify-end gap-10">
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </m.ol>
-
-      <m.div variants={item} className="flex justify-between gap-10">
-        <p>© 2023 XHunterTech</p>
+    <m.footer variants={container} initial="hidden" animate="show" className="w-full flex flex-col md:flex-row md:items-center justify-between">
+      <m.div variants={item} className="flex gap-10 items-center">
+        <p className="text-zinc-500 dark:text-zinc-400">© 2023 XHunterTech</p>
+        <SwitcherTheme />
       </m.div>
+
+      <m.ol variants={item} className="flex justify-end gap-10">
+        <li className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900">Home</li>
+        <li className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900">About</li>
+        <li className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900">Contact</li>
+      </m.ol>
     </m.footer>
   )
 }

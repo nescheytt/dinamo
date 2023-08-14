@@ -21,13 +21,13 @@ export default function Header() {
   return (
     <m.header variants={container} initial="hidden" animate="show" className="absolute">
       <m.ol variants={item} initial="hidden" animate="show" className="flex gap-10">
-        <li>
+        <li className="text-zinc-950 dark:text-white">
           <a href="/">Home</a>
         </li>
-        <li>
+        <li className="text-zinc-950 dark:text-white">
           <a href="/">About</a>
         </li>
-        <li>
+        <li className="text-zinc-950 dark:text-white">
           <a href="/">Contact</a>
         </li>
       </m.ol>
