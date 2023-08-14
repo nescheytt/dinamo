@@ -9,7 +9,7 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <m.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .75,ease: "easeOut" }} className="min-h-screen flex flex-col items-center justify-between py-12 px-5 md:px-24 relative bg-zinc-900">
+    <m.main initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .75,ease: "easeOut" }} className="min-h-screen flex flex-col items-center justify-between py-12 px-5 md:px-24 relative bg-white dark:bg-zinc-900">
       <Gradient />
       <Header />
       <Banner />
