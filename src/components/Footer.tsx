@@ -19,8 +19,12 @@ const item = {
 
 export default function Footer() {
   return (
-    <m.footer variants={container} initial="hidden" animate="show" className="w-full flex flex-col justify-between">
-      <m.ol variants={item} className="flex justify-end gap-10">
+    <m.footer variants={container} initial="hidden" animate="show" className="w-full flex flex-col md:flex-row justify-between gap-11 md:gap-0">
+      <m.div variants={item} className="flex justify-center order-1 md:order-none">
+        <p className="text-sm"><strong>XHunter</strong> © 2023</p>
+      </m.div>
+
+      <m.ol variants={item} className="flex justify-center md:justify-end gap-10">
         <li>
           <a href="/" className="text-sm text-zinc-400 hover:text-zinc-100">Home</a>
         </li>
@@ -31,10 +35,6 @@ export default function Footer() {
           <a href="/" className="text-sm text-zinc-400 hover:text-zinc-100">Contact</a>
         </li>
       </m.ol>
-
-      <m.div variants={item} className="flex justify-between gap-10">
-        <p className="text-sm"><strong>XHunter</strong> © 2023</p>
-      </m.div>
     </m.footer>
   )
 }
