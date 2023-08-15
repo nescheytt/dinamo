@@ -35,13 +35,14 @@ export default function About() {
         className="w-full lg:max-w-6xl flex flex-col lg:flex-row gap-5 lg:gap-10">
         <div className="w-full relative transition duration-1000 ring-2 ring-zinc-600 ring-inset rounded-xl p-[1px] bg-animation">
           <div className="h-full rounded-xl z-10 relative bg-zinc-900 hover:bg-zinc-800 p-6 animation ease-in-out duration-500">
-            <div className="max-h-[300px] overflow-hidden mb-4">
+            <div className="flex justify-center overflow-hidden mb-4">
               <Lottie
                 lottieRef={lottieAnimationARef}
                 animationData={animationGeometryc}
+                onComplete={() => console.log('onComplete')}
                 onMouseEnter={() => lottieAnimationARef.current?.setDirection(-1)}
                 onMouseLeave={() => lottieAnimationARef.current?.setDirection(1)}
-                style={{ width: '300px' }}
+                style={{ width: '250px' }}
               />
             </div>
             <h3 className="text-zinc-200 text-lg font-bold mb-2">Optimization</h3>
@@ -53,13 +54,14 @@ export default function About() {
 
         <div className="w-full relative transition duration-1000 ring-2 ring-zinc-600 ring-inset rounded-xl p-[1px] bg-animation">
           <div className="h-full rounded-xl z-10 relative bg-zinc-900 hover:bg-zinc-800 p-6 animation ease-in-out duration-500">
-            <div className="max-h-[300px] overflow-hidden mb-4">
+            <div className="max-h-[250px] flex justify-center overflow-hidden mb-4">
               <Lottie
                 lottieRef={lottieAnimationBRef}
                 animationData={animationDots}
                 onMouseEnter={() => lottieAnimationBRef.current?.setDirection(-1)}
                 onMouseLeave={() => lottieAnimationBRef.current?.setDirection(1)}
-                style={{ width: '300px' }}
+                initialSegment={[10, 140]}
+                style={{ width: '100%', height: '100%', transform: 'translateY(-15%)' }}
               />
             </div>
             <h3 className="text-zinc-200 text-lg font-bold mb-2">Dynamic Design</h3>
@@ -71,13 +73,15 @@ export default function About() {
 
         <div className="w-full relative transition duration-1000 ring-2 ring-zinc-600 ring-inset rounded-xl p-[1px] bg-animation">
           <div className="h-full rounded-xl z-10 relative bg-zinc-900 hover:bg-zinc-800 p-6 animation ease-in-out duration-500">
-            <Lottie
-              lottieRef={lottieAnimationCRef}
-              animationData={animationCircle}
-              onMouseEnter={() => lottieAnimationCRef.current?.setDirection(-1)}
-              onMouseLeave={() => lottieAnimationCRef.current?.setDirection(1)}
-              style={{ width: '300px' }}
-            />
+            <div className="flex justify-center overflow-hidden mb-4">
+              <Lottie
+                lottieRef={lottieAnimationCRef}
+                animationData={animationCircle}
+                onMouseEnter={() => lottieAnimationCRef.current?.setDirection(-1)}
+                onMouseLeave={() => lottieAnimationCRef.current?.setDirection(1)}
+                style={{ width: '250px' }}
+              />
+            </div>
             <h3 className="text-zinc-200 text-lg font-bold mb-2">Consultancy</h3>
             <p className="text-md font-light text-zinc-400">
               We answer all your questions record time.
