@@ -6,9 +6,14 @@
   .bg-animation:hover:after {
     content: "";
     --angle: 0deg;
-    @apply rounded-xl absolute inset-0 z-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+    @apply rounded-xl absolute inset-0 z-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent
   }
-}
+
+  .animate-shooting-star {
+    animation: shooting-star 7s linear infinite;
+    @apply h-[1px] w-[920px] absolute bg-gradient-to-r from-transparent from-0% to-zinc-700 to-100%
+  }
+} 
 
 @property --angle {
   syntax: "<angle>";
@@ -22,10 +27,30 @@
   }
 }
 
+@keyframes shooting-star {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  40% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(70%);
+  }
+}
+
 @supports (background: paint(houdini)) {
   .bg-animation:hover:after {
       animation: rotate-animation 7s linear infinite;
       background: linear-gradient(var(--angle),#52525b,#52525b,#407cff,#da8bff,#fb7185);
+  }
+
+  .animate-shooting-star {
+    animation: shooting-star 7s linear infinite;
+    background: linear-gradient(to right, transparent 0%, #3f3f46 100%);
   }
 }
 
