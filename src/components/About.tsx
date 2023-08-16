@@ -39,9 +39,10 @@ export default function About() {
               <Lottie
                 lottieRef={lottieAnimationARef}
                 animationData={animationGeometryc}
-                onComplete={() => console.log('onComplete')}
-                onMouseEnter={() => lottieAnimationARef.current?.setDirection(-1)}
-                onMouseLeave={() => lottieAnimationARef.current?.setDirection(1)}
+                onMouseEnter={() => { lottieAnimationARef.current?.play() }}
+                onMouseLeave={() => { lottieAnimationARef.current?.pause() }}
+                loop={true}
+                autoplay={false}
                 style={{ width: '250px' }}
               />
             </div>
@@ -58,9 +59,11 @@ export default function About() {
               <Lottie
                 lottieRef={lottieAnimationBRef}
                 animationData={animationDots}
-                onMouseEnter={() => lottieAnimationBRef.current?.setDirection(-1)}
-                onMouseLeave={() => lottieAnimationBRef.current?.setDirection(1)}
-                initialSegment={[10, 140]}
+                onMouseEnter={() => { lottieAnimationBRef.current?.play() }}
+                onMouseLeave={() => { lottieAnimationBRef.current?.pause() }}
+                loop={true}
+                autoplay={false}
+                initialSegment={[40, 130]}
                 style={{ width: '100%', height: '100%', transform: 'translateY(-15%)' }}
               />
             </div>
@@ -77,8 +80,10 @@ export default function About() {
               <Lottie
                 lottieRef={lottieAnimationCRef}
                 animationData={animationCircle}
-                onMouseEnter={() => lottieAnimationCRef.current?.setDirection(-1)}
-                onMouseLeave={() => lottieAnimationCRef.current?.setDirection(1)}
+                onMouseEnter={() => { lottieAnimationCRef.current?.play() }}
+                onMouseLeave={() => { lottieAnimationCRef.current?.pause() }}
+                loop={true}
+                autoplay={false}
                 style={{ width: '250px' }}
               />
             </div>
