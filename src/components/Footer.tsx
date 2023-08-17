@@ -26,13 +26,25 @@ export default function Footer() {
 
       <m.ol variants={item} className="flex justify-center md:justify-end gap-10">
         <li>
-          <a href="/" className="text-sm text-zinc-400 hover:text-zinc-100">Home</a>
+          <a href="/" className="
+            text-sm text-zinc-400 hover:text-zinc-200
+            relative
+            before:absolute before:left-0 before:-bottom-1 before:h-[1px] before:w-full before:z-50 before:bg-zinc-200 before:origin-left before:scale-x-0 before:transition-transform hover:before:scale-x-100
+            after:absolute after:left-0 after:-bottom-1 after:z-0 after:h-[1px] after:w-full after:bg-zinc-600">Home</a>
         </li>
         <li>
-          <a href="/" className="text-sm text-zinc-400 hover:text-zinc-100">About</a>
+          <a href="/" className="
+            text-sm text-zinc-400 hover:text-zinc-200
+            relative
+            before:absolute before:left-0 before:-bottom-1 before:h-[1px] before:w-full before:z-50 before:bg-zinc-200 before:origin-left before:scale-x-0 before:transition-transform hover:before:scale-x-100
+            after:absolute after:left-0 after:-bottom-1 after:z-0 after:h-[1px] after:w-full after:bg-zinc-600">About</a>
         </li>
         <li>
-          <a href="/" className="text-sm text-zinc-400 hover:text-zinc-100">Contact</a>
+          <a href="/" className="
+            text-sm text-zinc-400 hover:text-zinc-200
+            relative
+            before:absolute before:left-0 before:-bottom-1 before:h-[1px] before:w-full before:z-50 before:bg-zinc-200 before:origin-left before:scale-x-0 before:transition-transform hover:before:scale-x-100
+            after:absolute after:left-0 after:-bottom-1 after:z-0 after:h-[1px] after:w-full after:bg-zinc-600">Contact</a>
         </li>
       </m.ol>
     </m.footer>

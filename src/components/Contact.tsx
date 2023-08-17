@@ -4,24 +4,22 @@ import { motion as m } from 'framer-motion'
 
 export default function Contact() {
   return (
-    <section className="max-w-lg min-h-screen flex flex-col items-center justify-center gap-10">
-      <m.h3 initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1.50 } }} className="w-full text-4xl font-bold text-gray-300 text-center mb-3">
+    <section className="min-h-screen flex flex-col items-center justify-center gap-10">
+      <m.h3 initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1.50 } }} className="w-full text-6xl font-bold text-gray-300 text-center mb-3">
         Start with XHunter, today.
       </m.h3>
 
-      <m.button
+      <m.a
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 1.50 } }}
-        className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white text-white focus:ring-pink-800"
-      >
-        <span className="flex items-center justify-center relative px-5 py-2.5 transition-all ease-in duration-75 bg-zinc-900 rounded-md group-hover:bg-opacity-0 gap-2">
-          Send email
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right">
-            <path d="M5 12h14"/>
-            <path d="m12 5 7 7-7 7"/>
-          </svg>
-        </span>
-      </m.button>
+        href='mailto:contact@xhunter.com'
+        className="
+          text-2xl font-light relative
+          before:absolute before:left-0 before:-bottom-1 before:h-[1px] before:w-full before:z-50 before:bg-zinc-200 before:origin-left before:scale-x-0 before:transition-transform hover:before:scale-x-100
+          after:absolute after:left-0 after:-bottom-1 after:z-0 after:h-[1px] after:w-full after:bg-zinc-600"
+        >
+        contact@xhunter.com
+      </m.a>
     </section>
   )
 }
