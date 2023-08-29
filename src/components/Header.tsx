@@ -19,16 +19,16 @@ const item = {
 
 export default function Header() {
   return (
-    <m.header variants={container} initial="hidden" animate="show" className="absolute">
-      <m.ol variants={item} initial="hidden" animate="show" className="flex gap-10">
+    <m.header variants={container} initial='hidden' animate='show' className='absolute'>
+      <m.ol variants={item} initial='hidden' animate='show' className='flex gap-10'>
         <li>
-          <a href="/" className="text-sm text-zinc-400 hover:text-zinc-100">Home</a>
+          <a href='/' className='text-sm text-zinc-400 hover:text-zinc-100'>Home</a>
         </li>
         <li>
-          <a href="/" className="text-sm text-zinc-400 hover:text-zinc-100">About</a>
+          <a href='/' className='text-sm text-zinc-400 hover:text-zinc-100'>About</a>
         </li>
         <li>
-          <a href="/" className="text-sm text-zinc-400 hover:text-zinc-100">Contact</a>
+          <a href='/' className='text-sm text-zinc-400 hover:text-zinc-100'>Contact</a>
         </li>
       </m.ol>
     </m.header>
