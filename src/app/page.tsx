@@ -1,6 +1,7 @@
 import Gradient from '@/components/Gradient'
 import Header from '@/components/Header'
 import Banner from '@/components/Banner'
+import Services from '@/components/Services'
 import About from '@/components/About'
 import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <Banner />
       <About />
+      <Services />
       <Contact />
       <Footer />
     </main>
