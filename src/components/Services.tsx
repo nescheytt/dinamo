@@ -15,17 +15,17 @@ export default function Services() {
 
   return (
     <section className='w-full lg:max-w-6xl flex flex-col items-center justify-center gap-10 md:gap-20'>
-      <div className="max-w-3xl">
+      <div className='max-w-3xl'>
         <m.h3
           initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0, transition: { duration: .75 } }} viewport={{ once: true }}
-          className="w-full text-xl md:text-4xl font-extrabold text-zinc-200 text-center mb-3"
+          className='w-full text-xl md:text-4xl font-extrabold text-zinc-200 text-center mb-3'
         >
           A full-service digital innovation partner
         </m.h3>
 
         <m.p
           initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0, transition: { delay: .75, duration: .75 } }} viewport={{ once: true }}
-          className="text-base md:text-xl text-center font-light text-zinc-400">
+          className='text-base md:text-xl text-center font-light text-zinc-400'>
           Our rich design and technology expertise delivers top brands and digital experiences.
         </m.p>
       </div>
