@@ -16,7 +16,7 @@ const item = {
 
 export default function Header() {
   return (
-    <m.header variants={container} initial='hidden' whileInView='visible' viewport={{ once: true }} className='w-full h-24 flex items-center justify-center absolute top-0'>
+    <m.header variants={container} initial='hidden' animate='visible' className='absolute'>
       <m.ol variants={item} className='flex gap-10'>
         {menuItems.map((link, index: number) => (
           <li key={index}>
