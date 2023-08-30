@@ -68,7 +68,7 @@ export default function About() {
   ]
   
   return (
-    <section className='w-full min-h-screen flex flex-col items-center justify-center gap-10 md:gap-20'>
+    <section id="about" className='w-full min-h-screen flex flex-col items-center justify-center gap-10 md:gap-20'>
       <div className='max-w-xl'>
         <Heading>What&apos;s XHunter!?</Heading>
         <Lead>We take care of making your user interface shine with modern designs, clean code and a fully optimized application.</Lead>

@@ -3,11 +3,11 @@ import type { MenuItems } from '@/types/menuItems'
 export const menuItems: MenuItems[] = [
   {
     label: 'Home',
-    url: '/'
+    url: 'https://xhunter.vercel.app'
   },
   {
     label: 'About',
-    url: '/#about'
+    url: '#about'
   },
   {
     label: 'Contact',
