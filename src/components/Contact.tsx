@@ -12,7 +12,7 @@ export default function Contact() {
       <m.a
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 1.50 } }}
-        href='mailto:contact@xhunter.com'
+        href='mailto:nahuel.scheytt@gmail.com'
         className='
           text-lg lg:text-2xl font-light relative
           before:absolute before:left-0 before:-bottom-1 before:h-[1px] before:w-full before:z-50 before:bg-zinc-200 before:origin-left before:scale-x-0 before:transition-transform hover:before:scale-x-100

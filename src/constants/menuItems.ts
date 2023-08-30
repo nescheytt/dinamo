@@ -11,6 +11,6 @@ export const menuItems: MenuItems[] = [
   },
   {
     label: 'Contact',
-    url: '/#contact'
+    url: 'mailto:nahuel.scheytt@gmail.com'
   }
 ]
