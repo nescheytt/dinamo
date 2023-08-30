@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    scroll-behavior: smooth !important;
+  }
+}
+
 @layer components {
   .bg-animation:hover:after {
     content: "";
@@ -12,6 +18,10 @@
   .animate-shooting-star {
     animation: shooting-star 7s linear infinite;
     @apply h-[1px] w-[920px] absolute bg-gradient-to-r from-transparent from-0% to-zinc-700 to-100%
+  }
+
+  .animate-border-bottom {
+    @apply before:absolute before:left-0 before:-bottom-1 before:h-[1px] before:w-full before:z-50 before:bg-zinc-200 before:origin-left before:scale-x-0 before:transition-transform hover:before:scale-x-100 after:absolute after:left-0 after:-bottom-1 after:z-0 after:h-[1px] after:w-full after:bg-zinc-600
   }
 } 
 

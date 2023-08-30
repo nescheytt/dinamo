@@ -3,10 +3,22 @@
 import { useRef } from 'react'
 import { motion as m } from 'framer-motion'
 import Lottie, { LottieRefCurrentProps } from 'lottie-react'
+import Heading from '@/components/ui/Heading'
+import Lead from '@/components/ui/Lead'
 import AnimateStar from '@/components/AnimateStar'
 import animationAbstract from '@/assets/images/animation_abstract.json'
 import animationLine from '@/assets/images/animation_line.json'
 import animationTriangle from '@/assets/images/animation_triangle.json'
+
+const container = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { delayChildren: .75, staggerChildren: 1 }}
+}
+
+const item = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 1.50, ease: 'easeInOut' } }
+}
 
 export default function Services() {
   const lottieAnimationARef = useRef<LottieRefCurrentProps>(null) 
@@ -14,29 +26,20 @@ export default function Services() {
   const lottieAnimationCRef = useRef<LottieRefCurrentProps>(null)
 
   return (
-    <section className='w-full lg:max-w-6xl flex flex-col items-center justify-center gap-10 md:gap-20'>
+    <m.section
+      className='w-full lg:max-w-6xl flex flex-col items-center justify-center gap-10 md:gap-20'
+      variants={container} initial="hidden" whileInView="visible" viewport={{ once: true }}
+    >
       <div className='max-w-3xl'>
-        <m.h3
-          initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0, transition: { duration: .75 } }} viewport={{ once: true }}
-          className='w-full text-xl md:text-4xl font-extrabold text-zinc-200 text-center mb-3'
-        >
-          A full-service digital innovation partner
-        </m.h3>
-
-        <m.p
-          initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0, transition: { delay: .75, duration: .75 } }} viewport={{ once: true }}
-          className='text-base md:text-xl text-center font-light text-zinc-400'>
-          Our rich design and technology expertise delivers top brands and digital experiences.
-        </m.p>
+        <Heading>A full-service digital innovation partner</Heading>
+        <Lead>Our rich design and technology expertise delivers top brands and digital experiences.</Lead>
       </div>
 
       <m.div
         className='w-full h-full bg-zinc-900 hover:bg-zinc-800 flex items-center gap-20 animation ease-in-out duration-500 ring-1 ring-zinc-800 ring-inset rounded-xl px-6 py-12 md:p-24 relative overflow-hidden'
         onMouseEnter={() => { lottieAnimationARef.current?.play() }}
         onMouseLeave={() => { lottieAnimationARef.current?.pause() }}
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0, transition: { delay: .75, duration: .75 } }}
-        viewport={{ once: true }}
+        variants={item}
       >
         <div className='flex flex-col'>
           <h3 className='w-full text-xl md:text-4xl font-extrabold text-zinc-200 mb-3'>
@@ -55,9 +58,7 @@ export default function Services() {
         className='w-full h-full bg-zinc-900 hover:bg-zinc-800 flex justify-end gap-20 animation ease-in-out duration-500 ring-1 ring-zinc-800 ring-inset rounded-xl px-6 py-12 md:p-24 relative overflow-hidden'
         onMouseEnter={() => { lottieAnimationBRef.current?.play() }}
         onMouseLeave={() => { lottieAnimationBRef.current?.pause() }}
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0, transition: { delay: 1, duration: .75 } }}
-        viewport={{ once: true }}
+        variants={item}
       >
         <div className='w-[500px] absolute md:top-[30px] lg:top-[-70px] md:-left-[160px] lg:left-0 opacity-75'>
           <Lottie lottieRef={lottieAnimationBRef} animationData={animationAbstract} autoplay={false} loop={true} />
@@ -76,9 +77,7 @@ export default function Services() {
         className='w-full h-full bg-zinc-900 hover:bg-zinc-800 flex items-center gap-20 animation ease-in-out duration-500 ring-1 ring-zinc-800 ring-inset rounded-xl px-6 py-12 md:p-24 relative overflow-hidden'
         onMouseEnter={() => { lottieAnimationCRef.current?.play() }}
         onMouseLeave={() => { lottieAnimationCRef.current?.pause() }}
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0, transition: { delay: 1.25, duration: .75 } }}
-        viewport={{ once: true }}
+        variants={item}
       >
         <div className='flex flex-col'>
           <h3 className='w-full text-xl md:text-4xl font-extrabold text-zinc-200 mb-3'>
@@ -94,6 +93,6 @@ export default function Services() {
       </m.div>
 
       <AnimateStar />
-    </section>
+    </m.section>
   )
 }
