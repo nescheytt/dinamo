@@ -6,17 +6,17 @@ import Link from './Link'
 
 const container = {
   hidden: { opacity: 0 },
-  show: { opacity: 1, transition: { staggerChildren: 0.5 }}
+  visible: { opacity: 1 }
 }
 
 const item = {
   hidden: { opacity: 0, y: 100 },
-  show: { opacity: 1, y: 0, transition: { duration: .75 }}
+  visible: { opacity: 1, y: 0, transition: { duration: 1 }}
 }
 
 export default function Footer() {
   return (
-    <m.footer variants={container} initial='hidden' whileInView='show' className='w-full flex flex-col md:flex-row justify-between gap-11 md:gap-0'>
+    <m.footer variants={container} initial='hidden' whileInView='visible' viewport={{ once: true }} className='w-full flex flex-col md:flex-row justify-between gap-11 md:gap-0'>
       <m.div variants={item} className='flex justify-center order-1 md:order-none'>
         <Link label='XHunter © 2023' url='https://xhunter.vercel.app' className='text-sm text-zinc-400 hover:text-zinc-200'  />
       </m.div>
