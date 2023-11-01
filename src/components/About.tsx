@@ -25,7 +25,7 @@ export default function About() {
     {
       title: 'Optimization',
       description: 'Navigate your digital products at light speed. Scroll in peace.',
-      animation: 
+      animation:
         <Lottie
           lottieRef={lottieAnimationARef}
           animationData={animationGeometryc}
@@ -39,7 +39,7 @@ export default function About() {
     {
       title: 'Dynamic Design',
       description: 'Modern designs for your product.',
-      animation: 
+      animation:
         <Lottie
           lottieRef={lottieAnimationBRef}
           animationData={animationDots}
@@ -54,7 +54,7 @@ export default function About() {
     {
       title: 'Consultancy',
       description: 'We answer all your questions record time.',
-      animation: 
+      animation:
         <Lottie
           lottieRef={lottieAnimationCRef}
           animationData={animationCircle}
@@ -66,11 +66,11 @@ export default function About() {
         />
     }
   ]
-  
+
   return (
     <section id="about" className='w-full min-h-screen flex flex-col items-center justify-center gap-10 md:gap-20'>
       <div className='max-w-xl'>
-        <Heading>What&apos;s XHunter!?</Heading>
+        <Heading>What&apos;s Dinamo!?</Heading>
         <Lead>We take care of making your user interface shine with modern designs, clean code and a fully optimized application.</Lead>
       </div>
 

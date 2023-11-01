@@ -1,7 +1,7 @@
 'use client'
 
 import { motion as m } from 'framer-motion'
-import { menuItems } from '@/constants/menuItems'
+import { menuItems } from '@/data/menu-items'
 import Link from './Link'
 
 const container = {
@@ -11,7 +11,7 @@ const container = {
 
 const item = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 1.50, ease: 'easeInOut' }}
+  visible: { opacity: 1, transition: { duration: 1.50, ease: 'easeInOut' } }
 }
 
 export default function Header() {
