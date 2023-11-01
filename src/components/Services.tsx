@@ -12,7 +12,7 @@ import animationTriangle from '@/assets/images/animation_triangle.json'
 
 const container = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { delayChildren: .75, staggerChildren: 1 }}
+  visible: { opacity: 1, transition: { delayChildren: .75, staggerChildren: 1 } }
 }
 
 const item = {
@@ -21,7 +21,7 @@ const item = {
 }
 
 export default function Services() {
-  const lottieAnimationARef = useRef<LottieRefCurrentProps>(null) 
+  const lottieAnimationARef = useRef<LottieRefCurrentProps>(null)
   const lottieAnimationBRef = useRef<LottieRefCurrentProps>(null)
   const lottieAnimationCRef = useRef<LottieRefCurrentProps>(null)
 
@@ -46,7 +46,7 @@ export default function Services() {
             Digital Products
           </h3>
           <p className='text-base md:text-xl font-light text-zinc-400 mix-blend-diference'>
-            At XHunter, we believe everyone deserves an exceptional user experience, whether using a product at work or in their free time. We create memorable enterprise and consumer products as well as provide comprehensive design systems for effortless product iteration.
+            At Dinamo, we believe everyone deserves an exceptional user experience, whether using a product at work or in their free time. We create memorable enterprise and consumer products as well as provide comprehensive design systems for effortless product iteration.
           </p>
         </div>
         <div className='absolute top-24 -right-32 lg:top-0 lg:right-0 opacity-75'>
@@ -84,7 +84,7 @@ export default function Services() {
             Development
           </h3>
           <p className='text-base md:text-xl font-light text-zinc-400 mix-blend-diference'>
-          Our designers and developers collaborate to create websites and products that provide exceptional user experiences and functionality. We optimize search engine visibility, ensure accessibility, and maximize performance.
+            Our designers and developers collaborate to create websites and products that provide exceptional user experiences and functionality. We optimize search engine visibility, ensure accessibility, and maximize performance.
           </p>
         </div>
         <div className='absolute lg:top-[-250px] md:right-0 opacity-75'>
